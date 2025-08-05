@@ -1,0 +1,75 @@
+.my-requests-container {
+  padding: 20px;
+  min-height: 70vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.center-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.no-requests {
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.request-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  
+  color:black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.request-link:hover {
+  background-color: #1a202c;
+  color: white;
+}
+
+.request-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+  
+}
+
+.request-card h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.cancel-btn {
+  margin-top: 8px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #ff1a1a;
+}
+.status-text.pending {
+  color: red;
+  font-weight: bold;
+}
+
+.status-text.assigned,
+.status-text.accepted {
+  color: green;
+  font-weight: bold;
+}

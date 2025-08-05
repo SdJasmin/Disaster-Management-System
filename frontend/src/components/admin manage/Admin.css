@@ -1,0 +1,278 @@
+/* Root Container */
+.admin-dashboard {
+  display: flex;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  margin-top: 3cm;
+  
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-top: 2cm;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1a2a6c;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: #d0d9ff;
+}
+
+/* Main Content */
+.admin-content {
+  flex-grow: 1;
+  padding: 40px;
+  margin-left: 240px;
+}
+
+/* Section Styling */
+.admin-section {
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.admin-section h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #1a2a6c;
+}
+
+/* Form Styling */
+.alert-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  width:auto;
+}
+
+.alert-form input,
+.alert-form textarea,
+.alert-form select {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.alert-form button {
+  background-color: #1a2a6c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.alert-form button:hover {
+  background-color: #0f1e5d;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.tab-buttons button {
+  background-color: #1a2a6c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.tab-buttons button:hover {
+  background-color: #005fa3;
+}
+
+/* Request List & Cards */
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.request-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.request-card .accept-btn {
+  background-color: green;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Volunteer Card */
+.volunteer-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.volunteer-card button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.volunteer-card button:first-of-type {
+  background-color: green;
+}
+.volunteer-card button:last-of-type {
+  background-color: red;
+}
+
+/* Status Colors */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  color: orange;
+}
+.status.accepted {
+  color: green;
+}
+.status.completed {
+  color: blue;
+}
+
+/* Sent Alerts */
+.sent-alerts {
+  margin-top: 2rem;
+}
+
+.alert-card {
+  background: #fff6f6;
+  border-left: 4px solid red;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.delete-alert-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .admin-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .admin-section {
+    max-width: 100%;
+  }
+}
+.assign-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.assign-section select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.assign-btn {
+  background-color: #1a2a6c;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.assign-btn:hover {
+  background-color: #0f1e5d;
+}
+
+.assign-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

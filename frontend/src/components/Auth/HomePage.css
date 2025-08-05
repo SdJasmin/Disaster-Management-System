@@ -1,0 +1,115 @@
+/* HomePage.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafe;
+  color: #1a1a1a;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('./authbgimg.png') no-repeat center/cover;
+  color: white;
+  padding: 120px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons button {
+  background-color: #063970;
+  color: white;
+  padding: 12px 24px;
+  margin: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-buttons button:hover {
+  background-color: #0c5aa6;
+}
+
+.about, .features, .how-it-works, .latest-alerts {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+.how-it-works ol {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.latest-alerts ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.latest-alerts li {
+  background: #fff;
+  margin: 10px auto;
+  padding: 12px;
+  max-width: 600px;
+  border-left: 5px solid red;
+  font-weight: 500;
+}
+
+.latest-alerts .moderate {
+  color: orange;
+}
+
+.latest-alerts .critical {
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #063970;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}

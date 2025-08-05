@@ -1,0 +1,231 @@
+/* components/roles/Profile.css */
+.profile-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  
+}
+
+.profile-photo-container {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px auto;
+  position: relative; /* 🔥 Important to make .edit-icon appear */
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2563eb;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.edit-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.edit-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+.edit-icon:hover {
+  background-color: #1e40af;
+}
+.edit-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.edit-form h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.edit-form input:focus {
+  border-color: #2563eb;
+}
+
+.edit-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #1a2a6c;
+  color: white;
+}
+
+.edit-form button[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+.edit-form button[type="button"] {
+  background-color: #e5e7eb;
+  color: #374151;
+  margin-top: 8px;
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #d1d5db;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logout-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e;
+}
+.logged-out-message {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logged-out-message h2 {
+  color: #444;
+}
+
+.login-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1a2a6c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #096dd9;
+}
+/* New Layout Styles */
+.profile-page {
+  display: flex;
+  min-height: 100vh;
+  background: url('./bgprofile.png') no-repeat center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+  
+}
+
+.right-panel {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
