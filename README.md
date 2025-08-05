@@ -59,7 +59,7 @@ Volunteer Management
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/disaster-management-system.git
+git clone https://github.com/SdJasmin/Disaster-Management-System.git
 cd disaster-management-system
 
 # Setup Frontend
